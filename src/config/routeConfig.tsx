@@ -16,15 +16,15 @@ export const routeConfig = [
     page: <FAQsPage verticalKey='faqs'/>
   },
   {
-    path: '/events',
-    page: <EventsPage verticalKey='events'/>
+    path: '/financial_professionals',
+    page: <EventsPage verticalKey='financial_professionals'/>
   },
   {
-    path: '/locations',
-    page: <LocationsPage verticalKey='locations' />
+    path: '/services',
+    page: <LocationsPage verticalKey='services' />
   },
   {
-    path: '/jobs',
-    page: <JobsPage verticalKey='jobs' />
+    path: '/tools_and_advice',
+    page: <JobsPage verticalKey='tools_and_advice' />
   }
 ];

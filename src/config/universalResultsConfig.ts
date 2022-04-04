@@ -12,17 +12,17 @@ export const universalResultsConfig: UniversalResultsConfig = {
       showOrdinal: false
     }
   },
-  events: {
-    label: 'Events',
+  financial_professionals: {
+    label: 'Financial Professionals',
     cardConfig: {
       CardComponent: StandardCard,
       showOrdinal: false
     }
   },
-  jobs: {
-    label: 'Jobs',
+  services: {
+    label: 'Services',
   },
-  locations: {
-    label: 'Locations',
+  tools_and_advice: {
+    label: 'Tools and Advice',
   }
 }
