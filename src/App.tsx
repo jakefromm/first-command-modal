@@ -39,37 +39,30 @@ export default function App() {
 
   return (
     <>
+      <button onClick={openModal}>Open Modal</button>
       <Modal
         isOpen={modalIsOpen}
         // onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
         style={customStyles}
         contentLabel="Example Modal"
+        ariaHideApp={false}
       >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2>
-        <button onClick={closeModal}>close</button>
-        <div>I am a modal</div>
-        <form>
-          <input />
-          <button>tab navigation</button>
-          <button>stays</button>
-          <button>inside</button>
-          <button>the modal</button>
-        </form>
-      </Modal>
-      <AnswersHeadlessProvider {...answersHeadlessConfig}>
-        <button onClick={openModal}>Open Modal</button>
-        <PageViewContextProvider >
-          <div className='flex justify-center px-4 py-6'>
-            <div className='w-full max-w-5xl'>
-              <PageRouter
-                Layout={StandardLayout}
-                routes={routeConfig}
-              />
+        <h2>Hello</h2>
+        <AnswersHeadlessProvider {...answersHeadlessConfig}>
+          <PageViewContextProvider >
+            <div className='flex justify-center px-4 py-6'>
+              <div className='w-full max-w-5xl'>
+                <PageRouter
+                  Layout={StandardLayout}
+                  routes={routeConfig}
+                />
+              </div>
             </div>
-          </div>
-        </PageViewContextProvider>
-      </AnswersHeadlessProvider>
+          </PageViewContextProvider>
+        </AnswersHeadlessProvider>
+        <button onClick={closeModal}>close</button>
+      </Modal>
     </>
   );
 }
