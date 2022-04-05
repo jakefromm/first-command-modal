@@ -92,6 +92,7 @@ export default function SearchBar({
   function renderSearchButton() {
     return <SearchButton
       className={cssClasses.submitButton}
+
       handleClick={() => console.log(query)}
       isLoading={isLoading || false}
     />

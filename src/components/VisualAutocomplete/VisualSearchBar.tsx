@@ -205,7 +205,7 @@ export default function VisualSearchBar({
         placeholder={placeholder}
         screenReaderInstructions={SCREENREADER_INSTRUCTIONS}
         screenReaderText={getScreenReaderText(autocompleteResults)}
-        onSubmit={( query ) => {
+        onSubmit={() => {
           // Redirect to the search page
           window.location.replace(`https://answers_firstcommand_com.yextpages.net/search?query=${query}`);
         }}
