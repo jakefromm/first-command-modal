@@ -40,18 +40,23 @@ export default function App() {
 
   return (
     <>
-      <button style={{
-        borderRadius: '6px',
-        border: '1px solid',
-        borderColor: '#cf202f',
-        color: '#cf202f',
-        padding: '8px 16px',
-        marginTop: '10%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginLeft: '50%',
-      }} onClick={openModal}>Open Modal</button>
+      <div id="button-container" style={{
+        height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+        <button style={{
+          borderRadius: '6px',
+          border: '1px solid',
+          borderColor: '#cf202f',
+          color: '#cf202f',
+          padding: '8px 16px',
+          marginBottom: '20%'
+
+        }} onClick={openModal}>Open Modal</button>
+      </div>
       <Modal
         isOpen={modalIsOpen}
         // onAfterOpen={afterOpenModal}
