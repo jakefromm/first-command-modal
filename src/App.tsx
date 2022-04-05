@@ -20,6 +20,7 @@ const customStyles = {
 };
 
 
+
 export default function App() {
   // let subtitle: HTMLHeadingElement | null;
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -39,7 +40,18 @@ export default function App() {
 
   return (
     <>
-      <button onClick={openModal}>Open Modal</button>
+      <button style={{
+        borderRadius: '6px',
+        border: '1px solid',
+        borderColor: '#cf202f',
+        color: '#cf202f',
+        padding: '8px 16px',
+        marginTop: '10%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginLeft: '50%',
+      }} onClick={openModal}>Open Modal</button>
       <Modal
         isOpen={modalIsOpen}
         // onAfterOpen={afterOpenModal}
