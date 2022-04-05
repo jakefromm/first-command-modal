@@ -15,11 +15,11 @@ export default function UniversalSearchPage(props: { universalResultsConfig: Uni
   return (
     <div>
       <SpellCheck />
-      <DirectAnswer />
+      {/* <DirectAnswer />
       <UniversalResults
         appliedFiltersConfig={universalResultsFilterConfig}
         verticalConfigs={universalResultsConfig}
-      />
+      /> */}
     </div>
   );
 }

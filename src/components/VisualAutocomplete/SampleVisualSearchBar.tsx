@@ -9,7 +9,7 @@ import { universalResultsConfig } from '../../config/universalResultsConfig';
 export default function SampleVisualSearchBar() {
   return (
     <VisualSearchBar
-      placeholder='Search...'
+      placeholder='search here...'
       headlessId='visual-autocomplete'
       entityPreviewsDebouncingTime={100}
       verticalKeyToLabel={verticalKey => universalResultsConfig[verticalKey]?.label ?? verticalKey}

@@ -92,7 +92,7 @@ export default function SearchBar({
   function renderSearchButton() {
     return <SearchButton
       className={cssClasses.submitButton}
-      handleClick={executeQuery}
+      handleClick={() => console.log(query)}
       isLoading={isLoading || false}
     />
   }
@@ -103,7 +103,10 @@ export default function SearchBar({
         placeholder={placeholder}
         screenReaderInstructions={SCREENREADER_INSTRUCTIONS}
         screenReaderText={screenReaderText}
-        onSubmit={executeQuery}
+        onSubmit={(query ) => {
+          // Redirect to the search page
+          window.location.replace(`https://answers_firstcommand_com.yextpages.net/search?query=${query}`);
+        }}
         onInputChange={value => {
           answersActions.setQuery(value);
         }}

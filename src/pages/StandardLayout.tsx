@@ -25,11 +25,12 @@ const StandardLayout: LayoutComponent = ({ page }) => {
     <>
       {isVertical
         ? <SearchBar
-          placeholder='Search...'
+          placeholder='This is the search bar...'
+
         />
         : <SampleVisualSearchBar />
       }
-      <Navigation links={navLinks} />
+      {/* <Navigation links={navLinks} /> */}
       {page}
     </>
   )

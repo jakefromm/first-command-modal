@@ -205,7 +205,10 @@ export default function VisualSearchBar({
         placeholder={placeholder}
         screenReaderInstructions={SCREENREADER_INSTRUCTIONS}
         screenReaderText={getScreenReaderText(autocompleteResults)}
-        onSubmit={executeQuery}
+        onSubmit={( query ) => {
+          // Redirect to the search page
+          window.location.replace(`https://answers_firstcommand_com.yextpages.net/search?query=${query}`);
+        }}
         onInputChange={value => {
           answersActions.setQuery(value);
         }}
@@ -219,7 +222,7 @@ export default function VisualSearchBar({
         renderSearchButton={() =>
           <SearchButton
             className={cssClasses.submitButton}
-            handleClick={executeQuery}
+            handleClick={() => window.location.replace(`http://answers.firstcommand.com.yextpages.net/?=&referrerPageUrl=&query=${query}`)}
             isLoading={isLoading}
           />
         }
