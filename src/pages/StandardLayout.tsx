@@ -25,7 +25,7 @@ const StandardLayout: LayoutComponent = ({ page }) => {
     <>
       {isVertical
         ? <SearchBar
-          placeholder='This is the search bar...'
+          placeholder='Search...'
         />
         : <SampleVisualSearchBar />
       }
