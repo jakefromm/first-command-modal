@@ -5,7 +5,7 @@ import { answersHeadlessConfig } from './config/answersHeadlessConfig';
 import { routeConfig } from './config/routeConfig';
 import { PageViewContextProvider } from './context/PageViewContext';
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -21,7 +21,7 @@ const customStyles = {
 
 
 export default function App() {
-  let subtitle: HTMLHeadingElement | null;
+  // let subtitle: HTMLHeadingElement | null;
   const [modalIsOpen, setIsOpen] = React.useState(false);
 
   function openModal() {
